@@ -8,7 +8,7 @@ import com.akkobana.avto_to.databinding.ItemMenuBinding
 class MenuViewHolder(
     private val binding: ItemMenuBinding
 ): RecyclerView.ViewHolder(binding.root) {
-    fun bind(item: Menu) = with(binding){
+    fun bind(item: Menu, isLastPosition: Boolean = false) = with(binding){
         if(item.iconId != null){
             ivMenuIcon.setImageResource(item.iconId)
             ivMenuIcon.isVisible = true
@@ -19,5 +19,9 @@ class MenuViewHolder(
             tvMenuText.isVisible = true
         } else
             tvMenuText.isVisible = false
+
+        if(isLastPosition) {
+            vDivider.isVisible = false
+        }
     }
 }

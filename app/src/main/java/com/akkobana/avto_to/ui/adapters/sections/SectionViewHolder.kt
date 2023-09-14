@@ -9,7 +9,7 @@ import com.akkobana.avto_to.model.SectionItem
 class SectionViewHolder(
     private val binding: ItemSectionBinding
 ): RecyclerView.ViewHolder(binding.root) {
-    fun bind(item: SectionItem, isLastPositions: Boolean = false) = with(binding){
+    fun bind(item: SectionItem, isLastPosition: Boolean = false) = with(binding){
         if(!item.sectionName.isNullOrEmpty()) {
             tvSectionName.text = item.sectionName
             tvSectionName.isVisible = true
@@ -23,7 +23,7 @@ class SectionViewHolder(
         } else {
             ivSectionIcon.isVisible = false
         }
-        if (isLastPositions) {
+        if (isLastPosition) {
             (itemView.layoutParams as ViewGroup.MarginLayoutParams).marginEnd = 16
         }
 

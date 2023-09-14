@@ -14,7 +14,7 @@ class SectionAdapter(
         SectionViewHolder( ItemSectionBinding.inflate(LayoutInflater.from(parent.context), parent, false))
 
     override fun onBindViewHolder(holder: SectionViewHolder, position: Int) {
-        if( list.size - 1 == position){
+        if (position == list.size - 1) {
             holder.bind(list[position], true)
         } else {
             holder.bind(list[position])

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">avto-to</string>
+    <string name="search_hint_text">Код запчасти или VIN автомобиля</string>
+    <string name="my_cars">Мои авто</string>
+    <string name="add">Добавить</string>
+    <string name="banner_text">Наш новый МАРКЕТПЛЕЙС</string>
+    <string name="add_car">Добавить авто</string>
+    <string name="watch">Посмотреть</string>
+    <string name="section_item_text">Мои заказы</string>
+    <string name="menu_item_text">Каталог автозапчастей</string>
+</resources>

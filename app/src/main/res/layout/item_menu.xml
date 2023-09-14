@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    android:background="@color/white"
+    app:cardBackgroundColor="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivMenuIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginVertical="16dp"
+        android:src="@drawable/ic_wheel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMenuText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="52dp"
+        android:textColor="@color/black"
+        android:text="@string/menu_item_text"
+        android:textSize="15sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginVertical="16dp"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_arrow_toward" />
+
+</androidx.cardview.widget.CardView>

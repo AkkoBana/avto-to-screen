@@ -1,9 +1,10 @@
 package com.akkobana.avto_to.ui.adapters.menu
 
+import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import com.akkobana.avto_to.model.Menu
 import com.akkobana.avto_to.databinding.ItemMenuBinding
+import com.akkobana.avto_to.model.Menu
 
 class MenuViewHolder(
     private val binding: ItemMenuBinding
@@ -21,7 +22,7 @@ class MenuViewHolder(
             tvMenuText.isVisible = false
 
         if(isLastPosition) {
-            vDivider.isVisible = false
+            vDivider.isGone = true
         }
     }
 }
